@@ -1,73 +1,64 @@
-body {
+*{
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #e0e0e0;
+}
+img {
+-webkit-user-drag: none;
+}
+.container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
     height: 100vh;
-    width: 100vw;
-    overflow: hidden;
 }
-
-.principal {
-    display: flex;
-    flex-direction: row;
-    width: 100%; /* 90% da largura da viewport */
-    height: 100%; /* 90% da altura da viewport */
-    max-width: 1920px; /* Limite para 1920px de largura */
-    max-height: 1080px; /* Limite para 1080px de altura */
-    background: linear-gradient(to right, #f0f0f0, #3e8ea4);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
 .menu {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 20%;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    align-content: center;
+    width: 25%; /* 30% menos largura que a div da imagem */
+    background-color: #f0f0f0; /* Cor de fundo para a div do menu */
+    padding: 25px;
+    box-shadow: #0000009f 0.5vh 0px 5px;
+    z-index: 1;
+    background-image:url("/img/crossbg.jpeg");
+    background-color: rgba(70, 109, 119, 0.5);
+    background-size: cover;
+    background-position: center center no-repeat;
+    background-blend-mode: overlay;
+   
 }
-
 .menu button {
-    width: 80%;
-    background-color: #d3d3d3;
-    border: none;
-    padding: 15px 0;
-    margin: 15px 0;
-    font-size: 1.5vw;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-    text-transform: uppercase;
-}
-
-.menu button:hover {
-    background-color: #bcbcbc;
-}
-
-.layout {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-grow: 1;
-    position: relative;
-}
-
-.layout img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 60%;
-    max-width: 800px;
-    height: auto;
+    max-width: 100% ;
+    white-space: nowrap;
+    border: 0;
     border-radius: 10px;
+    margin-block: 50px;
+    padding: 10px;
+    font-size: 2vw;
+    font-family:"IBM plex mono",monospace ;
+    font-weight:bold;
+    background-image: linear-gradient(to right, #d9d9d9, #a8a8a8);
+    box-shadow: #0000009f 0px 0.5vh 5px;
+   
+}
+.menu button:focus {
+    transform: translateY(4px);
+    background-image: linear-gradient(to right, #757575, #2e2e2e);
+    box-shadow: inset #0000009f 0px 0.5vh 5px;
+}
+.menu button:hover{
+    cursor: pointer;
+}
+.image-container {
+    width: 75%; /* 30% mais largura que a div do menu */
+    background-image: linear-gradient(to bottom, #a8cacf, #025962, #000000); /* Cor de fundo para a div da imagem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-container img {
+    max-width: 75%;
+    height: auto;
+    padding: 20px;
+    
 }

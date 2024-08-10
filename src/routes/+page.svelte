@@ -1,18 +1,21 @@
 <script lang="ts">
     import "../routes/home.css"
+    
 </script>
 
-<div class="principal">
-    
-    <nav class="menu">
-        <button>Play</button>
-        <button>How to Play</button>
-        <button>About Us</button>
-    </nav>
-
-    <section class="layout">
-        <img src="/icon.png" alt="Crosswords Logo">
-    </section>
-
+<svelte:head>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <title>CrossWords</title>
+</svelte:head>
+ 
+ <div class="container">
+        <section class="menu">
+            <button>PLAY</button>
+            <button>HOW TO PLAY</button>
+            <button>ABOUT US</button>
+        </section>
+        <div class="image-container">
+            <img src="/img/crosslogo.png" alt="">
+        </div>
 </div>
 

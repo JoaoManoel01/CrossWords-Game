@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'IBM Plex Mono', monospace;
+    background: linear-gradient(to bottom, #a8cacf, #025962, #000000);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+}
+
+header {
+    position: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.profiles {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+button {
+    background-color: #636363;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    color: white;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+button:hover {
+    background-color: #4b4b4b;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer img {
+    width: 150px;
+    height: 100px;
+}

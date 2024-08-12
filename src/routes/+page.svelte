@@ -1,6 +1,5 @@
 <script lang="ts">
-    import "../routes/home.css"
-    
+    import "../routes/home.css";
 </script>
 
 <svelte:head>
@@ -8,14 +7,15 @@
   <title>CrossWords</title>
 </svelte:head>
  
- <div class="container">
-        <section class="menu">
-            <button>PLAY</button>
-            <button>HOW TO PLAY</button>
-            <button>ABOUT US</button>
-        </section>
-        <div class="image-container">
-            <img src="/img/crosslogo.png" alt="">
-        </div>
+<div class="container">
+    <section class="menu">
+        <button>PLAY</button>
+        <button>HOW TO PLAY</button>
+        <a href="/about"><button>ABOUT US</button></a>
+    </section>
+    <div class="image-container">
+        <img src="/img/crosslogo.png" alt="CrossWords Logo">
+    </div>
 </div>
+
 

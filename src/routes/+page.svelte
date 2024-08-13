@@ -1,5 +1,5 @@
 <script lang="ts">
-    import "../routes/home.css";
+    import "../styles/home.css"
 </script>
 
 <svelte:head>

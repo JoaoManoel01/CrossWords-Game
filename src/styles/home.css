@@ -1,9 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 img {
--webkit-user-drag: none;
+    -webkit-user-drag: none;
 }
 .container {
     display: flex;
@@ -20,33 +20,34 @@ img {
     padding: 25px;
     box-shadow: #0000009f 0.5vh 0px 5px;
     z-index: 1;
-    background-image:url("/img/crossbg.jpeg");
+    background-image: url("/img/crossbg.jpeg");
     background-color: rgba(70, 109, 119, 0.5);
     background-size: cover;
     background-position: center center no-repeat;
     background-blend-mode: overlay;
-   
+}
+.menu a {
+    text-decoration: none; /* Remove sublinhado dos links */
 }
 .menu button {
-    max-width: 100% ;
+    width: 100%; /* Ocupa toda a largura disponível */
     white-space: nowrap;
     border: 0;
     border-radius: 10px;
     margin-block: 50px;
     padding: 10px;
     font-size: 2vw;
-    font-family:"IBM plex mono",monospace ;
-    font-weight:bold;
+    font-family: "IBM plex mono", monospace;
+    font-weight: bold;
     background-image: linear-gradient(to right, #d9d9d9, #a8a8a8);
     box-shadow: #0000009f 0px 0.5vh 5px;
-   
 }
-.menu button:focus {
+.menu button:hover {
     transform: translateY(4px);
     background-image: linear-gradient(to right, #757575, #2e2e2e);
     box-shadow: inset #0000009f 0px 0.5vh 5px;
 }
-.menu button:hover{
+.menu button:hover {
     cursor: pointer;
 }
 .image-container {
@@ -60,5 +61,4 @@ img {
     max-width: 75%;
     height: auto;
     padding: 20px;
-    
 }

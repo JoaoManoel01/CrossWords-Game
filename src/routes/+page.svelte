@@ -9,7 +9,7 @@
  
 <div class="container">
     <section class="menu">
-        <button>PLAY</button>
+        <a href="/play"><button>PLAY</button></a>
         <a href="/howtoplay"><button>HOW TO PLAY</button></a>
         <a href="/about"><button>ABOUT US</button></a>
     </section>

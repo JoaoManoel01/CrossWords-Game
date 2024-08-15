@@ -24,11 +24,13 @@ header {
     min-height: 15%;
     padding: 10px;
 }
+
 .return{
     display: flex;
     justify-content: flex-end;
     align-content: center
 }
+
 .tomenu{
     font-family: "IBM plex mono", monospace;
     color: #000000;
@@ -42,11 +44,13 @@ header {
     font-weight: bold;
     margin-right: 20px;
 }
+
 .tomenu:hover{
     transform: translateY(4px);
     background-image: linear-gradient(to right, #757575, #2e2e2e);
     box-shadow: inset #0000009f 0px 0.5vh 5px;
 }
+
 main {
     display: flex;
     justify-content: center;
@@ -81,6 +85,10 @@ main {
     margin-bottom: 10px;
 }
 
+.pagetitle{
+    color: #000000;
+}
+
 h1 {
     font-family: "IBM plex mono", monospace;
     color: #ffffff;
@@ -88,9 +96,11 @@ h1 {
     font-weight: bolder;
     text-align: center;
 }
+
 h1, .separator, .return {
     flex: 1;
 }
+
 p {
     font-family: "IBM plex mono", monospace;
     color: #ffffff;

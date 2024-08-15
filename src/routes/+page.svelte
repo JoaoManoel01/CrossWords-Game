@@ -10,7 +10,7 @@
 <div class="container">
     <section class="menu">
         <button>PLAY</button>
-        <button>HOW TO PLAY</button>
+        <a href="/howtoplay"><button>HOW TO PLAY</button></a>
         <a href="/about"><button>ABOUT US</button></a>
     </section>
     <div class="image-container">

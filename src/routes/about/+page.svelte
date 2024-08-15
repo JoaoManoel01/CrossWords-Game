@@ -36,7 +36,7 @@ botoes.forEach(botao => {
         <div class="return">
             <a href="../../"><button class="tomenu"><i class="fas fa-sign-out-alt"></i></button></a>
         </div>
-        <h1>ABOUT US</h1>
+        <h1 class="pagetitle">ABOUT US</h1>
         <div class="separator"> </div>
     </header>
     <main>

@@ -1,0 +1,19 @@
+header {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: space-between;
+	min-height: 15%;
+	padding: 10px;
+}
+
+h1,
+.separator,
+.return {
+	flex: 1;
+}
+
+.pagetitle {
+	color: #000000;
+	font-size: 5vw;
+}

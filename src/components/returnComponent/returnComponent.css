@@ -1,0 +1,24 @@
+.return {
+	display: flex;
+	justify-content: flex-end;
+	align-content: center;
+}
+.tomenu {
+	font-family: 'IBM plex mono', monospace;
+	color: #000000;
+	background-image: linear-gradient(to right, #d9d9d9, #a8a8a8);
+	box-shadow: #0000009f 0px 0.5vh 5px;
+	border: none;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	cursor: pointer;
+	font-weight: bold;
+	margin-right: 20px;
+}
+
+.tomenu:hover {
+	transform: translateY(4px);
+	background-image: linear-gradient(to right, #757575, #2e2e2e);
+	box-shadow: inset #0000009f 0px 0.5vh 5px;
+}

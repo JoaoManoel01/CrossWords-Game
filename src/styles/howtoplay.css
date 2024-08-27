@@ -1,203 +1,149 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    background: linear-gradient(to bottom, #a8cacf, #025962, #000000);
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-.cont {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-
 .howheader {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 15%;
-    padding: 10px;
-}
-
-.return{
-    display: flex;
-    justify-content: flex-end;
-    align-content: center
-}
-
-.tomenu{
-    font-family: "IBM plex mono", monospace;
-    color: #000000;
-    background-image: linear-gradient(to right, #d9d9d9, #a8a8a8);
-    box-shadow: #0000009f 0px 0.5vh 5px;
-    border: none;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    cursor: pointer;
-    font-weight: bold;
-    margin-right: 20px;
-}
-
-.tomenu:hover{
-    transform: translateY(4px);
-    background-image: linear-gradient(to right, #757575, #2e2e2e);
-    box-shadow: inset #0000009f 0px 0.5vh 5px;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: space-between;
+	min-height: 15%;
+	padding: 10px;
 }
 
 .howmain {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex: 1;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex: 1;
 }
 
-.cluespart, .gridpart{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    flex: 1;
-    max-height: 100%;
+.cluespart,
+.gridpart {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	flex: 1;
+	max-height: 100%;
 }
 
-.cluestable{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 80%;
+.cluestable {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 80%;
 }
 
-.thegrid{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 80%;
+.thegrid {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 80%;
 }
 
-.line{
- margin-block: 50px;
- border-color: #ffffff;
- border-style: solid;
- border-width: 2px;
+.line {
+	margin-block: 50px;
+	border-color: #ffffff;
+	border-style: solid;
+	border-width: 2px;
 }
 
 .cluelist {
-    display: flex;
-    align-items: center;
-    justify-content :center;
-    border-color: #ffffff;
-    border-style: solid;
-    border-radius: 30px;
-    border-width: 5px;
-   
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-color: #ffffff;
+	border-style: solid;
+	border-radius: 30px;
+	border-width: 5px;
 }
 
 ol {
-    list-style-position: inside;
-    padding: 20px;
+	list-style-position: inside;
+	padding: 20px;
 }
 
-.gridh1, .clueh1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 20%;
-}
-
-.pagetitle{
-    color: #000000;
-    font-size: 5vw;
+.gridh1,
+.clueh1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 20%;
 }
 
 h1 {
-    font-family: "IBM plex mono", monospace;
-    color: #ffffff;
-    font-size: 5vw;
-    font-weight: bolder;
-    text-align: center;
-   
-}
-
-.separator, .return {
-    flex: 0.5;
+	font-family: 'IBM plex mono', monospace;
+	color: #ffffff;
+	font-size: 5vw;
+	font-weight: bolder;
+	text-align: center;
 }
 
 li {
-    font-family: "IBM plex mono", monospace;
-    color: #ffffff;
-    font-size: 1.2rem;
-    font-weight: bolder;
-    text-wrap: wrap;
-    padding-block: 1vw;
+	font-family: 'IBM plex mono', monospace;
+	color: #ffffff;
+	font-size: 1.2rem;
+	font-weight: bolder;
+	text-wrap: wrap;
+	padding-block: 1vw;
 }
 
 .howfooter {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    min-height: 15%;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	min-height: 15%;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
 }
 
 .howfooter button {
-    font-family: "IBM plex mono", monospace;
-    color: #000000;
-    background-image: linear-gradient(to right, #d9d9d9, #a8a8a8);
-    box-shadow: #0000009f 0px 0.5vh 5px;
-    border: none;
-    border-radius: 20px;
-    padding: 10px 20px;
-    margin-bottom: 10px;
-    cursor: pointer;
-    font-size: 0.9rem;
-    font-weight: bold;
+	font-family: 'IBM plex mono', monospace;
+	color: #000000;
+	background-image: linear-gradient(to right, #d9d9d9, #a8a8a8);
+	box-shadow: #0000009f 0px 0.5vh 5px;
+	border: none;
+	border-radius: 20px;
+	padding: 10px 20px;
+	margin-bottom: 10px;
+	cursor: pointer;
+	font-size: 0.9rem;
+	font-weight: bold;
 }
 
 .howfooter button:hover {
-    transform: translateY(4px);
-    background-image: linear-gradient(to right, #757575, #2e2e2e);
-    box-shadow: inset #0000009f 0px 0.5vh 5px;
+	transform: translateY(4px);
+	background-image: linear-gradient(to right, #757575, #2e2e2e);
+	box-shadow: inset #0000009f 0px 0.5vh 5px;
 }
 
 table.crossword {
-    border-collapse: collapse;
+	border-collapse: collapse;
 }
 
 table.crossword td {
-    width: 60px;
-    height: 60px;
-    text-align: center;
-    vertical-align: middle;
-    border: 1px solid #000;
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid #000;
 }
 
 table.crossword .filled {
-    font-family: "IBM plex mono", monospace;
-    color: #ffffff;
-    font-weight: bolder;
-    background-color: #00000000;
-    border-color: #ffffff;
-    border-width: 5px;
-    font-size: 2rem;
-    
+	font-family: 'IBM plex mono', monospace;
+	color: #ffffff;
+	font-weight: bolder;
+	background-color: #00000000;
+	border-color: #ffffff;
+	border-width: 5px;
+	font-size: 2rem;
 }
 
 table.crossword .empty {
-    font-family: "IBM plex mono", monospace;
-    font-weight: bolder;
-    color: #ffffff;
-    background-color: #00000000;
-    border: 0;
-    font-size: 1.5rem;
+	font-family: 'IBM plex mono', monospace;
+	font-weight: bolder;
+	color: #ffffff;
+	background-color: #00000000;
+	border: 0;
+	font-size: 1.5rem;
 }

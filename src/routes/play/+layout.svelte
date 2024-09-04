@@ -1,6 +1,6 @@
 <script lang="ts">
 	import ReturnComponent from '../../components/returnComponent/ReturnComponent.svelte';
-    import '../../styles/play.css';
+	import '../../styles/play.css';
 </script>
 
 <svelte:head>

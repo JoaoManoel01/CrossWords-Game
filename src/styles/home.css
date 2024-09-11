@@ -1,65 +1,73 @@
 img {
 	-webkit-user-drag: none;
 }
+body{
+	background-image: url(/bgsimage/e6231119-f7db-42af-8dad-5271901e4352.gif);
+	background-size: cover ;
+	background-position: center center ;
+}
 .container {
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column-reverse;
+	justify-content: flex-end;
 	height: 100vh;
+	padding-inline: 20px;
 }
 .menu {
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-content: center;
-	width: 25%; /* 30% menos largura que a div da imagem */
-	background-color: #f0f0f0; /* Cor de fundo para a div do menu */
-	padding: 25px;
-	box-shadow: #0000009f 0.5vh 0px 5px;
-	z-index: 1;
-	background-image: url('/img/crossbg.jpeg');
-	background-color: rgba(70, 109, 119, 0.5);
-	background-size: cover;
-	background-position: center center no-repeat;
-	background-blend-mode: overlay;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 20%;
+	padding-block: 20px;
 }
+
+.menu .playb {
+align-self: flex-start;
+}
+
+.menu .outrob {
+	align-self: flex-end;
+	}
+
 .menu a {
+	display: flex;
 	text-decoration: none; /* Remove sublinhado dos links */
+	justify-content: center;
 }
 .menu button {
-	width: 100%; /* Ocupa toda a largura disponível */
-	white-space: nowrap;
-	border: 0;
+	width: 250px; 
+	height: 60px;
 	border-radius: 10px;
-	margin-block: 50px;
 	padding: 10px;
-	font-size: 2vw;
+	font-size: 20px;
 	font-family: 'IBM plex mono', monospace;
 	font-weight: bold;
-	background-image: linear-gradient(to right, #d9d9d9, #a8a8a8);
+	background-image: linear-gradient(to right, #0e0e0e, #000000);
 	box-shadow: #0000009f 0px 0.5vh 5px;
+	color: #ffffff;
+
+	
 }
 .menu button:hover {
 	transform: translateY(4px);
-	background-image: linear-gradient(to right, #757575, #2e2e2e);
+	background-image: linear-gradient(to right, #757575, #ffffff);
 	box-shadow: inset #0000009f 0px 0.5vh 5px;
+	color: #000000;
 }
 .menu button:hover {
 	cursor: pointer;
 }
 .image-container {
 	width: 75%; /* 30% mais largura que a div do menu */
-	background-image: linear-gradient(
-		to bottom,
-		#a8cacf,
-		#025962,
-		#000000
-	); /* Cor de fundo para a div da imagem */
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	height: 50%;
+	padding: 20px;
 }
 .image-container img {
-	max-width: 75%;
+	min-width: 750px;
 	height: auto;
 	padding: 20px;
 }
+

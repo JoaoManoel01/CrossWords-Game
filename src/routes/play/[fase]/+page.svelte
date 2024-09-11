@@ -12,9 +12,6 @@
 		fase++;
 		goto('/play/' + fase);
 		game = instanceGame(fase)
-			if (fase > 5) {
-				venceu = true
-			}
 	}
 
 	$: {
@@ -22,9 +19,10 @@
 		formatWord(game.inputs);
 		if (wins(game.inputs, game.respostas)){
 			setTimeout(subirNivel, 900)
-			
-			
 		}
+	}
+	if (fase > 5) {
+		venceu = true
 	}
  </script>
  {#if venceu == true}
@@ -35,7 +33,9 @@
 			<tr>
 				{#each linha as coluna, j}
 					{#if coluna == 0}
-						<td class="empty"></td>
+						<td class="empty">
+							{game.respostas[i][j] !== " " ? game.respostas[i][j] : ''}
+						</td>
 					{:else if coluna == 1}
 						<td class="filled">
 							<input

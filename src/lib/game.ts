@@ -24,7 +24,10 @@ function mapas(fase: number = 1):number[][] {
 	];
 
 	const mapa2 = [
-		[0, 0, 1, 0]	
+		[0, 0, 1, 0],
+		[0, 0, 1, 0],
+		[0, 0, 1, 0],
+		[0, 0, 1, 0],	
 	]	
 
 	if (fase == 1) {
@@ -49,8 +52,11 @@ function respostas(fase: number = 1):string[][] {
 	];
 
 	const respostas2 = [
-		[' ', ' ', 'B', ' ']	
-	]	
+		[' ', ' ', 'B', ' '],
+		[' ', ' ', 'A', ' '],
+		[' ', ' ', 'C', ' '],
+		[' ', ' ', 'D', ' '] 
+	];
 
 	if (fase == 1) {
 		return respostas1;

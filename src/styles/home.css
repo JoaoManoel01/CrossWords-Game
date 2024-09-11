@@ -12,15 +12,9 @@ img {
 	justify-content: center;
 	align-content: center;
 	width: 25%; /* 30% menos largura que a div da imagem */
-	background-color: #f0f0f0; /* Cor de fundo para a div do menu */
 	padding: 25px;
-	box-shadow: #0000009f 0.5vh 0px 5px;
 	z-index: 1;
-	background-image: url('/img/crossbg.jpeg');
-	background-color: rgba(70, 109, 119, 0.5);
-	background-size: cover;
-	background-position: center center no-repeat;
-	background-blend-mode: overlay;
+	
 }
 .menu a {
 	text-decoration: none; /* Remove sublinhado dos links */
@@ -48,12 +42,7 @@ img {
 }
 .image-container {
 	width: 75%; /* 30% mais largura que a div do menu */
-	background-image: linear-gradient(
-		to bottom,
-		#a8cacf,
-		#025962,
-		#000000
-	); /* Cor de fundo para a div da imagem */
+	; /* Cor de fundo para a div da imagem */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -63,3 +52,4 @@ img {
 	height: auto;
 	padding: 20px;
 }
+

@@ -37,8 +37,9 @@
 						<td class="empty"></td>
 						<td class="empty">1</td>
 						<td class="empty"></td>
+						<td class="empty"></td>
 					</tr>
-					<tr id="0">
+					<tr id="1">
 						<td class="empty"></td>
 						<td class="empty"></td>
 						<td class="empty"></td>
@@ -46,8 +47,9 @@
 						<td class="empty"></td>
 						<td class="filled">A</td>
 						<td class="empty"></td>
+						<td class="empty"></td>
 					</tr>
-					<tr id="1">
+					<tr id="2">
 						<td class="empty"></td>
 						<td class="empty">2</td>
 						<td class="empty">3</td>
@@ -56,7 +58,7 @@
 						<td class="filled">L</td>
 						<td class="filled"></td>
 					</tr>
-					<tr id="2">
+					<tr id="3">
 						<td class="empty"></td>
 						<td class="filled"></td>
 						<td class="empty"></td>
@@ -65,7 +67,7 @@
 						<td class="filled">L</td>
 						<td class="empty"></td>
 					</tr>
-					<tr id="3">
+					<tr id="4">
 						<td class="empty"></td>
 						<td class="filled"></td>
 						<td class="empty"></td>
@@ -74,7 +76,7 @@
 						<td class="filled">A</td>
 						<td class="empty"></td>
 					</tr>
-					<tr id="4">
+					<tr id="5">
 						<td class="empty">4</td>
 						<td class="filled"></td>
 						<td class="filled"></td>
@@ -83,7 +85,7 @@
 						<td class="filled">N</td>
 						<td class="filled"></td>
 					</tr>
-					<tr id="5">
+					<tr id="6">
 						<td class="empty"></td>
 						<td class="filled"></td>
 						<td class="empty"></td>
@@ -92,7 +94,7 @@
 						<td class="empty"></td>
 						<td class="empty"> </td></tr
 					>
-					<tr id="6">
+					<tr id="7">
 						<td class="empty">5</td>
 						<td class="filled"></td>
 						<td class="filled"></td>
@@ -101,11 +103,16 @@
 						<td class="empty"></td>
 						<td class="empty"></td>
 					</tr>
+					<tr id="8">
+						<td class="empty"></td>
+						<td class="empty"></td>
+						<td class="empty"></td>
+						<td class="empty"></td>
+						<td class="empty"></td>
+						<td class="empty"></td>
+					</tr>
 				</table>
 			</div>
 		</div>
 	</main>
-	<footer class="howfooter">
-		<button>More Explanation</button>
-	</footer>
 </div>

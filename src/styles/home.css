@@ -58,6 +58,7 @@ align-self: flex-start;
 	cursor: pointer;
 }
 .image-container {
+	width: 75%; /* 30% mais largura que a div do menu */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -69,3 +70,4 @@ align-self: flex-start;
 	height: auto;
 	padding: 20px;
 }
+

@@ -1,12 +1,16 @@
 <script lang="ts">
+	import { goto } from '$app/navigation';
 	import {instanceGame, formatWord, testWord, wins} from '$lib/game'; 
 
+	export let data;
+
 	let venceu : boolean = false 
-	let fase: number = 1;
+	let fase: number = data.fase;
 	let game = instanceGame(fase);
  
     function subirNivel () {
-		fase++
+		fase++;
+		goto('/play/' + fase);
 		game = instanceGame(fase)
 			if (fase > 5) {
 				venceu = true
@@ -18,6 +22,7 @@
 		formatWord(game.inputs);
 		if (wins(game.inputs, game.respostas)){
 			setTimeout(subirNivel, 900)
+			
 			
 		}
 	}

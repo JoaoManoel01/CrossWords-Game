@@ -11,7 +11,7 @@
 	<HeaderComponent title="HOW TO PLAY" />
 	<main class="howmain">
 		<div class="cluespart">
-			<div class="clueh1"><h1>Clues Table</h1></div>
+			<div class="clueh1"><h1 class="tablesh1">Clues Table</h1></div>
 			<div class="cluestable">
 				<div class="cluelist">
 					<ol>
@@ -26,7 +26,7 @@
 		</div>
 		<div class="line"></div>
 		<div class="gridpart">
-			<div class="gridh1"><h1>The Grid</h1></div>
+			<div class="gridh1"><h1 class="tablesh1">The Grid</h1></div>
 			<div class="thegrid">
 				<table class="crossword">
 					<tr id="0">
@@ -57,6 +57,7 @@
 						<td class="filled"></td>
 						<td class="filled">L</td>
 						<td class="filled"></td>
+						<td class="empty"></td>
 					</tr>
 					<tr id="3">
 						<td class="empty"></td>
@@ -65,6 +66,7 @@
 						<td class="empty"></td>
 						<td class="empty"></td>
 						<td class="filled">L</td>
+						<td class="empty"></td>
 						<td class="empty"></td>
 					</tr>
 					<tr id="4">
@@ -75,6 +77,7 @@
 						<td class="empty"></td>
 						<td class="filled">A</td>
 						<td class="empty"></td>
+						<td class="empty"></td>
 					</tr>
 					<tr id="5">
 						<td class="empty">4</td>
@@ -84,6 +87,7 @@
 						<td class="filled"></td>
 						<td class="filled">N</td>
 						<td class="filled"></td>
+						<td class="empty"></td>
 					</tr>
 					<tr id="6">
 						<td class="empty"></td>
@@ -92,8 +96,9 @@
 						<td class="empty"></td>
 						<td class="empty"></td>
 						<td class="empty"></td>
-						<td class="empty"> </td></tr
-					>
+						<td class="empty"> </td>
+						<td class="empty"></td>
+					</tr>
 					<tr id="7">
 						<td class="empty">5</td>
 						<td class="filled"></td>
@@ -102,8 +107,11 @@
 						<td class="empty"></td>
 						<td class="empty"></td>
 						<td class="empty"></td>
+						<td class="empty"></td>
 					</tr>
 					<tr id="8">
+						<td class="empty"></td>
+						<td class="empty"></td>
 						<td class="empty"></td>
 						<td class="empty"></td>
 						<td class="empty"></td>

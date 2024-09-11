@@ -3,5 +3,5 @@
 </script>
 
 <div class="return">
-	<a href="/"><button class="tomenu"><i class="fas fa-sign-out-alt"></i></button></a>
+	<a href="/"><button class="tomenu"><i class="fa-solid fa-arrow-left"></i></button></a>
 </div>

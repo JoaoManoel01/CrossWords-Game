@@ -1,16 +1,17 @@
 <script lang="ts">
+	import HeaderComponent from '../../../components/headerComponent/HeaderComponent.svelte';
 	import ReturnComponent from '../../../components/returnComponent/ReturnComponent.svelte';
 	import '../../../styles/play.css';
 
 	export let data;
 	let fase: number = data.fase;
 </script>
-<div class="cont">
-	<main class="howmain">
-		<div class="cluespart">
-			<div class="title1">CROSS WORDS</div>
-			<div class="cluestable">
-				<div class="clueh1"><h1>Clues Table</h1></div>
+<div class="contpl">
+	<HeaderComponent title="CROSS WORDS" />
+	<main class="howmain1">
+		<div class="cluespart1">
+			<div class="cluestable1">
+				<div class="clueh11"><h1 class="tablesh11">Clues Table</h1></div>
 				<ol>
 					{#if fase === 1}
 						<li>Teacher who likes J-Pop (5 ltr)</li>
@@ -48,10 +49,8 @@
 				</ol>
 			</div>
 		</div>
-		<div class="line"></div>
-		<div class="gridpart">
-			<ReturnComponent />
-			<div class="thegrid">
+		<div class="gridpart1">
+			<div class="thegrid1">
 				<slot></slot>
 			</div>
 		</div>

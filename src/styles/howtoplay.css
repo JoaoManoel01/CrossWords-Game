@@ -1,3 +1,12 @@
+
+.cont{
+background-image: url(/bgsimage/top-view-old-french-newspaper-pieces.jpg);
+background-color: rgba(0, 0, 0, 0.8);
+background-size: cover ;
+background-position: center center ;
+background-blend-mode: overlay;
+}
+
 .howheader {
 	display: flex;
 	flex-direction: row-reverse;
@@ -9,6 +18,7 @@
 .pagetitle{
 font-size: 70px;
 color: #ffffff;
+font-family: 'IBM plex mono', monospace;
 }
 
 .howmain {
@@ -46,7 +56,7 @@ color: #ffffff;
 	margin-block: 50px;
 	border-color: #ffffff;
 	border-style: solid;
-	border-width: 2px;
+	border-width: 0.5px;
 }
 
 .cluelist {
@@ -72,7 +82,7 @@ ol {
 	min-height: 20%;
 }
 
-h1 {
+.tablesh1 {
 	font-family: 'IBM plex mono', monospace;
 	color: #ffffff;
 	font-size: 40px;

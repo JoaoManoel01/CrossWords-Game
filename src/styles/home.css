@@ -1,17 +1,19 @@
 img {
 	-webkit-user-drag: none;
 }
-body{
-	background-image: url(/bgsimage/e6231119-f7db-42af-8dad-5271901e4352.gif);
-	background-size: cover ;
-	background-position: center center ;
-}
+
 .container {
 	display: flex;
 	flex-direction: column-reverse;
 	justify-content: flex-end;
+	align-items: center;
 	height: 100vh;
 	padding-inline: 20px;
+	background-image: url(/bgsimage/e6231119-f7db-42af-8dad-5271901e4352.gif);
+	background-color: rgba(0, 0, 0, 0.3);
+	background-size: cover ;
+	background-position: center center ;
+	background-blend-mode: overlay;
 }
 .menu {
 	display: flex;

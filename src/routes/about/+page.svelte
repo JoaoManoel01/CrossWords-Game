@@ -25,13 +25,13 @@
 			showEmail: false,
 			name: 'Ryon Lima',
 			profile: '/Profile/RYON.jpg',
-			email: 'email4@example.com'
+			email: 'rxl@discente.ifpe.edu.br'
 		},
 		{
 			showEmail: false,
 			name: 'Caio Vinicius',
 			profile: '/Profile/caio.png',
-			email: 'email5@example.com'
+			email: 'cvsn@discente.ifpe.edu.be'
 		}
 	];
 </script>

@@ -18,7 +18,7 @@
 		game.inputs
 		formatWord(game.inputs);
 		if (wins(game.inputs, game.respostas)){
-			setTimeout(subirNivel, 900)
+			subirNivel();
 		}
 	}
 	if (fase > 5) {

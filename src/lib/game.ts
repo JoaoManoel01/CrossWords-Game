@@ -11,81 +11,20 @@ class Game {
 	}
 }
 // a função em questão está servindo de base para construir os mapas.
-function mapas(fase: number = 1):number[][] {
-	const mapa1 = [
-		[0, 0, 0, 0, 0, 0, 0],
-		[0, 0, 0, 0, 0, 1, 0],
-		[0, 0, 0, 1, 1, 1, 1],
-		[0, 1, 0, 0, 0, 1, 0],
-		[0, 1, 0, 0, 0, 1, 0],
-		[0, 1, 1, 1, 1, 1, 1],
-		[0, 1, 0, 0, 0, 0, 0],
-		[0, 1, 1, 1, 0, 0, 0]
-	];
-
-	const mapa2 = [
-		[0, 0, 0, 1, 0, 0, 0],
-		[1, 1, 1, 1, 1, 0, 0],
-		[0, 1, 0, 1, 0, 0, 0],
-		[0, 1, 0, 1, 0, 0, 0],
-		[0, 1, 0, 1, 0, 0, 0],
-		[0, 1, 0, 1, 0, 0, 0],
-		[0, 0, 1, 1, 1, 1, 0],
-		[0, 0, 0, 1, 0, 0, 0],
-		[0, 0, 1, 1, 1, 0, 0],
-		[0, 0, 0, 1, 0, 0, 0]	
-	]	
-
-	const mapa3 = [
-		[0, 0, 0, 1, 0, 0, 1, 0, 0],
-		[0, 1, 0, 1, 0, 0, 1, 0, 1],
-		[0, 1, 0, 1, 1, 1, 1, 1, 1],
-		[0, 1, 0, 1, 0, 0, 1, 0, 1],
-		[0, 1, 0, 1, 0, 0, 1, 0, 0],
-		[0, 1, 0, 1, 0, 0, 0, 0, 0],
-		[1, 1, 1, 1, 1, 1, 1, 0, 0]
-
-	]
-
-	const mapa4 = [
-		[0, 0, 0, 1, 0, 1, 0],
-		[1, 1, 1, 1, 1, 1, 1],
-		[0, 0, 0, 1, 0, 1, 0],
-		[0, 0, 0, 1, 0, 1, 0],
-		[0, 0, 0, 1, 0, 0, 0],
-		[0, 1, 1, 1, 1, 0, 0],
-		[0, 1, 0, 1, 0, 0, 0],
-		[0, 1, 0, 0, 0, 0, 0]
-
-	]
-
-	const mapa5 = [
-		[0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1],
-		[0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0],
-		[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-		[0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0],
-		[0, 1, 0, 1, 0, 0, 1, 1, 1, 1, 1],
-		[0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0],
-		[0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0],
-		[0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0],
-		[0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0]
-	
-	]
-
-
-	if (fase == 1) {
-		return mapa1
-	} else if (fase == 2){
-		return mapa2
-	}else if (fase == 3){
-		return mapa3
-	}else if (fase == 4){
-		return mapa4
-	}else if (fase == 5){
-		return mapa5
+function mapas(respostas: string[][]):number[][] {
+	const mapa: number[][] = []
+	for(let i = 0; i < respostas.length; i++){
+		mapa[i] = []
+		for(let j = 0; j < respostas[i].length; j++){
+			if(respostas[i][j] === ' ' || /\d/.test(respostas[i][j])){
+				mapa[i][j] = 0 
+			}
+			else{
+				mapa[i][j] = 1
+			}
+		}
 	}
-
-	return []
+	return mapa;
 }
 // a função está servindo de base para montar e armazenar as respostas.
 function respostas(fase: number = 1):string[][] {
@@ -101,17 +40,16 @@ function respostas(fase: number = 1):string[][] {
 	];
 
 	const respostas2 = [
-		['', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
-		['', ' ', ' ', ' ', 'C', ' ', ' ', ' '],
-		['', 'E', 'R', 'T', 'O', 'N', ' ', ' '],
-		['', ' ', 'E', ' ', 'M', ' ', ' ', ' '],
-		['', ' ', 'D', ' ', 'P', ' ', ' ', ' '],
-		['', ' ', 'E', ' ', 'U', ' ', ' ', ' '],
-		['', ' ', 'S', ' ', 'T', ' ', ' ', ' '],
-		['', ' ', ' ', 'D', 'A', 'V', 'I', ' '],
-		['', ' ', ' ', ' ', 'Ç', ' ', ' ', ' '],
-		['', ' ', ' ', 'L', 'A', 'N', ' ', ' '],
-		['', ' ', ' ', ' ', 'O', ' ', ' ', ' ']
+		[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ',' ',' '],
+		[' ', ' ','L', ' ', ' ', ' ', ' ', ' ', ' ', ' ',' '],
+		[' ', 'D','A', 'V', 'I', '', ' ', ' ', ' ', ' ',' '],
+		[' ', ' ','N', 'E', 'T', 'W', 'O', 'R', 'K', 'S',' '],
+		[' ', ' ', ' ','R', ' ', ' ', ' ', ' ', ' ', ' ',' '],
+		[' ', ' ', ' ','T', ' ', ' ', ' ', ' ', ' ', ' ',' '],
+		[' ', ' ', 'C','O', 'M', 'P', 'U', 'T', 'I', 'N','G'],
+		[' ', ' ', ' ','N', ' ', ' ', ' ', ' ', ' ', ' ',' '],
+		[' ', ' ', ' ', ' ',' ',' ', ' ', ' ', ' ', ' ',' '],
+		[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ',' ',' ']
 
 
 	]	
@@ -171,8 +109,8 @@ function respostas(fase: number = 1):string[][] {
 }
 // ele está exportando os atributos do game 
 export function instanceGame(fase: number = 1) {
-	const mapa = mapas(fase);
 	const resposta = respostas(fase);
+	const mapa = mapas(resposta);
 	const inputs: string[][] = []; //variavel onde o usuário vai interajir no jogo
 // está montando os inputs baseado no mapa.
 	for (let i = 0; i < mapa.length; i++) {
@@ -209,8 +147,9 @@ export function wins(
 ): boolean {
 	for(let i: number = 0; i < respostas.length; i++){
 		for (let j: number = 0; j < respostas[i].length; j++){
-			if (respostas[i][j] !== ' ' && respostas[i][j] !== inputs[i][j] ) {
-				return false
+			if (respostas[i][j] !== ' ' && !/\d/.test(respostas[i][j]) && respostas[i][j] !== inputs[i][j] ) {
+				//condição: \/d/.test(respostas[i][j]) está verificando se o conteúdo da string é um número
+				return false;
 			}
 		}
 	}

@@ -18,20 +18,17 @@ main {
 }
 
 .profiles {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	text-align: center;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 10rem;
+
 	& .profile {
 		display: flex;
 		flex-direction: column;
-		flex-wrap: nowrap;
 		align-items: center;
-		justify-content: center;
-		flex: 1;
 		margin-inline: 5vw;
-		padding: 10px;
+		margin: 0;
+		padding: 0;
 	}
 }
 

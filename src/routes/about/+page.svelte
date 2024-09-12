@@ -6,32 +6,37 @@
 		{
 			showEmail: false,
 			name: 'João Manoel',
-			profile: '/Profile/joao.png',
-			email: 'jmlcr@discente.ifpe.edu.br'
+			profile: 'joao.png',
+			email: 'jmlcr@discente.ifpe.edu.br',
+			github: 'JoaoManoel01'
 		},
 		{
 			showEmail: false,
 			name: 'Guilherme Matheus',
-			profile: '/Profile/guilherme.png',
-			email: 'Gmfs1@discente.ifpe.edu.br'
+			profile: 'guilherme.png',
+			email: 'Gmfs1@discente.ifpe.edu.br',
+			github: 'GuilhermeMth'
 		},
 		{
 			showEmail: false,
 			name: 'Kauã José',
-			profile: '/Profile/kaua.png',
-			email: 'email3@example.com'
+			profile: 'kaua.png',
+			email: 'Kjfm@discente.ifpe.edu.br',
+			github: 'JoaoManoel01'
 		},
 		{
 			showEmail: false,
 			name: 'Ryon Lima',
-			profile: '/Profile/RYON.jpg',
-			email: 'rxl@discente.ifpe.edu.br'
+			profile: 'RYON.jpg',
+			email: 'rxl@discente.ifpe.edu.br',
+			github: 'Ryonxl'
 		},
 		{
 			showEmail: false,
 			name: 'Caio Vinicius',
-			profile: '/Profile/caio.png',
-			email: 'cvsn@discente.ifpe.edu.be'
+			profile: 'caio.png',
+			email: 'cvsn@discente.ifpe.edu.br',
+			github: 'Vini1227'
 		}
 	];
 </script>
@@ -46,15 +51,17 @@
 		<div class="profiles">
 			{#each botoes as botao}
 				<div class="profile">
-					<div class="avatar"><img src={botao.profile} alt={botao.name} /></div>
+					<div class="avatar"><img src="/Profile/{botao.profile}" alt={botao.name} /></div>
 					<p>{botao.name}</p>
 					<button
 						id="btne5"
 						on:click={() => {
 							botao.showEmail = !botao.showEmail;
-						}}>{botao.showEmail ? botao.email : 'EMAIL'}</button
-					>
-					<button id="btng5">GITHUB</button>
+						}}>{botao.showEmail ? botao.email : 'EMAIL'}
+					</button>
+					<a href="https://github.com/{botao.github}" target="_blank">
+						<button id="btng5">GITHUB</button>
+					</a>
 				</div>
 			{/each}
 		</div>

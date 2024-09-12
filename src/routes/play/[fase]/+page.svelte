@@ -9,6 +9,7 @@
 	let game = instanceGame(fase);
  
     function subirNivel () {
+		alert('você passou de fase')
 		fase++;
 		goto('/play/' + fase);
 		game = instanceGame(fase)
@@ -19,14 +20,16 @@
 		formatWord(game.inputs);
 		if (wins(game.inputs, game.respostas)){
 			subirNivel();
-		}
-	}
-	if (fase > 5) {
+
+			if (fase > 5) {
 		venceu = true
 	}
+		}
+	}
+	
  </script>
  {#if venceu == true}
-	<h1> CONGRATULATIONS! </h1>
+	<h1> CONGRATULATIONS!</h1>
 	{:else}
 	<table class="crossword">
 		{#each game.mapa as linha, i}

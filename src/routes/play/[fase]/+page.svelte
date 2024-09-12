@@ -24,6 +24,7 @@
 			if (fase > 5) {
 		venceu = true
 		alert('VOCÊ FINALIZOU O JOGO')
+		goto('/');
 	}
 		}
 	}

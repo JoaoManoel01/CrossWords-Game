@@ -5,6 +5,9 @@ background-color: rgba(0, 0, 0, 0.8);
 background-size: cover ;
 background-position: center center ;
 background-blend-mode: overlay;
+min-height: 100vh; /* Garante que o fundo cubra toda a altura da viewport */
+margin: 0; /* Remove qualquer margem padrão */
+padding: 0; /* Remove qualquer padding padrão */
 }
 
 .pagetitle{
@@ -123,3 +126,4 @@ table.crossword .empty {
 	border: 0;
 	font-size: 1.5rem;
 }
+

@@ -22,7 +22,7 @@
 						<li>Opposite of Winner (5 ltr)</li>
 						<li>Accompanies coffee (4 ltr)</li>
 						<li>The season after winter (6 ltr)</li>
-						<li>A color of the blood (3 ltr)</li>
+						<li>The color of the blood (3 ltr)</li>
 
 					{:else if fase === 2}
 
@@ -34,8 +34,8 @@
 					
 					{:else if fase === 3}
 					
-						<li>Control structure that runs code while a condition is true. (5 ltr)</li>
-						<li>Control structure for deciding between alternatives. (9 ltr)</li>
+						<li>Control structure that runs code while a condition is true. (9 ltr)</li>
+						<li>Control structure for deciding between alternatives. (5 ltr)</li>
 						<li>Structure that holds multiple values of the same type. (7 ltr)</li>
 						<li>Control structure that loops through items in a collection. (3 ltr)</li>
 						<li>Operation type that checks if both operands are true. (7 ltr)</li>
